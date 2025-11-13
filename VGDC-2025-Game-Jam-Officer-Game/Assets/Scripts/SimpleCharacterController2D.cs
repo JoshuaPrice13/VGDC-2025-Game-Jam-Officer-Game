@@ -7,6 +7,7 @@ public class SimpleCharacterController2D : MonoBehaviour
     [SerializeField] private Color lightColor = Color.white;
     [SerializeField] private Color darkColor = Color.grey;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private Animator parentAnimator;
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -17,6 +18,13 @@ public class SimpleCharacterController2D : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Get the Animator from the parent and play animation
+        //parentAnimator = GetComponent<Animator>();
+        if (parentAnimator != null)
+        {
+            parentAnimator.Play("PlayerEntranceANi");
+        }
     }
 
     void FixedUpdate()
