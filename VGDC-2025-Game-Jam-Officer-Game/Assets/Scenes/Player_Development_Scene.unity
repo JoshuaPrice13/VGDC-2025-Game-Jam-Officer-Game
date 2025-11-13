@@ -307,6 +307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathBox
       objectReference: {fileID: 0}
+    - target: {fileID: 7386355052072501629, guid: 26eff224906dc9e47867e51be0cad815, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1108,7 +1112,7 @@ Transform:
   m_GameObject: {fileID: 1623332839}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.64, y: -1.71, z: 0}
+  m_LocalPosition: {x: 8.34, y: -1.56, z: 0}
   m_LocalScale: {x: 3.852, y: 2.4148, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
