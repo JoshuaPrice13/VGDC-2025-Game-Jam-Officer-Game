@@ -10,6 +10,7 @@ public class Patrol : MonoBehaviour
     public float speed = 2f;
 
     private Transform targetPoint;
+    public GameManager gm;
 
     void Start()
     {
@@ -35,7 +36,8 @@ public class Patrol : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
         {
             // Destroy the object that hit this object
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
+            gm.resetPlayer();
 
             // Or destroy this object instead
             // Destroy(gameObject);
