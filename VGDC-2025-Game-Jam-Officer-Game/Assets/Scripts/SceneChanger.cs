@@ -10,12 +10,6 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    public void LoadCurrentScene()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
-    }
-
     // Always go to scene 0
     public void LoadMainMenu()
     {
