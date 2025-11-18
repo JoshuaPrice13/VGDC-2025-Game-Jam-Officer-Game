@@ -34,7 +34,7 @@ public class SimpleCharacterController2D : MonoBehaviour
         {
             parentAnimator.Play("PlayerEntranceANi");
         }
-      
+
     }
 
     void FixedUpdate()
