@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6564069412097223939}
   - component: {fileID: 3058778202292207789}
   - component: {fileID: 4271185065405041073}
-  - component: {fileID: 5481003287300579060}
+  - component: {fileID: 4680252846530005623}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -99,9 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  gm: {fileID: 0}
---- !u!61 &5481003287300579060
-BoxCollider2D:
+--- !u!60 &4680252846530005623
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -142,9 +141,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.25}
+      - {x: -0.5, y: 0}
+      - {x: 0, y: -0.25}
+      - {x: 0.5, y: 0}
+  m_UseDelaunayMesh: 0
 --- !u!1 &7298147394847510990
 GameObject:
   m_ObjectHideFlags: 0
