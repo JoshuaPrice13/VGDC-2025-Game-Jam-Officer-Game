@@ -59,8 +59,5 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void resetPlayer()
-    {
-        player.Reset();
-    }
+   
 }
