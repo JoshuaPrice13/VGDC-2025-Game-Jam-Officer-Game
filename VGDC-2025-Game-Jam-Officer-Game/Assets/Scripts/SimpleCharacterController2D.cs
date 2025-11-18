@@ -1,3 +1,6 @@
+using System;
+using System.Diagnostics;
+using System.Security.AccessControl;
 using UnityEngine;
 
 public class SimpleCharacterController2D : MonoBehaviour
@@ -15,6 +18,10 @@ public class SimpleCharacterController2D : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isGrounded;
     private float horizontalInput;
+    public AudioSource LightsOn;
+    public AudioSource LightsOff;
+    public AudioSource DeathSound;
+    
 
     void Start()
     {
@@ -27,6 +34,7 @@ public class SimpleCharacterController2D : MonoBehaviour
         {
             parentAnimator.Play("PlayerEntranceANi");
         }
+
     }
 
     void FixedUpdate()
@@ -42,7 +50,7 @@ public class SimpleCharacterController2D : MonoBehaviour
             collision.gameObject.CompareTag("LightPlatform") ||
             collision.gameObject.CompareTag("DarkPlatform"))
         {
-            Debug.Log("Hit a platform");
+       
             isGrounded = true;
         }
     }
@@ -53,7 +61,7 @@ public class SimpleCharacterController2D : MonoBehaviour
             collision.gameObject.CompareTag("LightPlatform") ||
             collision.gameObject.CompareTag("DarkPlatform"))
         {
-            Debug.Log("left a platform");
+        
             isGrounded = false;
         }
     }
@@ -70,6 +78,7 @@ public class SimpleCharacterController2D : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             gameManager.ChangeColor();
+
         }
     }
 
@@ -78,15 +87,30 @@ public class SimpleCharacterController2D : MonoBehaviour
         if (color == "Light")
         {
             spriteRenderer.color = lightColor;
+
+            if (LightsOn != null)
+            {
+                LightsOn.Play();
+            }
         }
         else if (color == "Dark")
         {
             spriteRenderer.color = darkColor;
+
+            if (LightsOff != null)
+            {
+                LightsOff.Play();
+            }
         }
     }
 
     public void Reset()
     {
         transform.position = startPosition;
+
+        if(DeathSound != null)
+        {
+            DeathSound.Play();
+        }
     }
 }
