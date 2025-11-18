@@ -370,6 +370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6376824137172570079, guid: 46df810fa5444ff4ab429639ba8a9a03, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -877,8 +881,8 @@ PolygonCollider2D:
       - {x: -9.086572, y: 4.8066716}
       - {x: -9.032711, y: 0.20785618}
       - {x: 6.238966, y: 0.15287876}
-      - {x: 15.607282, y: 0.10401726}
-      - {x: 23.473434, y: 15.535915}
+      - {x: 23.206161, y: 0.2849431}
+      - {x: 22.846066, y: 15.804788}
   m_UseDelaunayMesh: 0
 --- !u!4 &1059752743
 Transform:
@@ -1418,7 +1422,7 @@ Transform:
   m_GameObject: {fileID: 1708935400}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.444634, y: 0.8931298, z: -10}
+  m_LocalPosition: {x: 2.4316297, y: 0.8931799, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
