@@ -877,9 +877,9 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 6.6387544, y: 15.951324}
-      - {x: -9.057635, y: 14.438161}
-      - {x: -9.086572, y: 4.8066716}
-      - {x: -9.032711, y: 0.20785618}
+      - {x: -9.962769, y: 14.826076}
+      - {x: -9.991706, y: 4.6773686}
+      - {x: -9.80854, y: 0.27250814}
       - {x: 6.238966, y: 0.15287876}
       - {x: 23.206161, y: 0.2849431}
       - {x: 22.846066, y: 15.804788}
@@ -1422,7 +1422,7 @@ Transform:
   m_GameObject: {fileID: 1708935400}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4316297, y: 0.8931799, z: -10}
+  m_LocalPosition: {x: 1.5217929, y: 0.9183302, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
