@@ -8,6 +8,8 @@ public class SimpleCharacterController2D : MonoBehaviour
     [SerializeField] private Color darkColor = Color.grey;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private Animator parentAnimator;
+    [SerializeField] private Vector3 startPosition;
+
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -81,5 +83,10 @@ public class SimpleCharacterController2D : MonoBehaviour
         {
             spriteRenderer.color = darkColor;
         }
+    }
+
+    public void Reset()
+    {
+        transform.position = startPosition;
     }
 }
