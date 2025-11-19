@@ -1397,6 +1397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkPlatform (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5707838336506787375, guid: 0de571ffad411414ea81975e8d6760d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.37
+      objectReference: {fileID: 0}
     - target: {fileID: 9113628586366333732, guid: 0de571ffad411414ea81975e8d6760d1, type: 3}
       propertyPath: speed
       value: 0.15
