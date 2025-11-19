@@ -23,16 +23,16 @@ public class MovingPlat : MonoBehaviour
         // Finish is basically wherever I put the end point, takes a direct path to it!
         finishPos = new Vector3(finish.transform.position.x, finish.transform.position.y, finish.transform.position.z);    
     }
-//
     // Update is called once per frame
     void Update()
     {
         trackPercent += direction * speed * Time.deltaTime;
         float x = (finishPos.x - startPos.x) * trackPercent + startPos.x;
         float y = (finishPos.y - startPos.y) * trackPercent + startPos.y;
-        transform.position = new Vector3(x,y,startPos.z);
+        transform.position = new Vector3(x, y, startPos.z);
 
-        if((direction == 1 && trackPercent > .9f) || (direction == -1 && trackPercent < 0.1f)){
+        if ((direction == 1 && trackPercent > .9f) || (direction == -1 && trackPercent < 0.1f))
+        {
             direction *= -1;
         }
     }
