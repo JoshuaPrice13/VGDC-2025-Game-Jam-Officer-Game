@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Patrol : MonoBehaviour
+public class DeathBox : MonoBehaviour
 {
     [Header("Patrol Points")]
     //public Transform pointA;
@@ -50,11 +50,14 @@ public class Patrol : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision)
-        {
+    {
             // Destroy the object that hit this object
             //Destroy(collision.gameObject);
-            player.Reset();
+        player.Reset();
+        if (gm != null)
+        {
             gm.Reset();
+        }
 
             // Or destroy this object instead
             // Destroy(gameObject);
@@ -62,5 +65,5 @@ public class Patrol : MonoBehaviour
             // Or destroy both
             // Destroy(collision.gameObject);
             // Destroy(gameObject);
-        }
+    }
 }
