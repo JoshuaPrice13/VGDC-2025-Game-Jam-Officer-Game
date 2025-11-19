@@ -18,7 +18,20 @@ public class Patrol : MonoBehaviour
         // Start by moving toward point A
         //targetPoint = pointA;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<SimpleCharacterController2D>();
-        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+        try
+        {
+            GameObject gmObject = GameObject.FindGameObjectWithTag("GameManager");
+            if (gmObject != null)
+            {
+                gm = gmObject.GetComponent<GameManager>();
+                
+            }
+        }
+        catch (UnityException)
+        {
+            gm = null;
+        }
     }
 
     void Update()

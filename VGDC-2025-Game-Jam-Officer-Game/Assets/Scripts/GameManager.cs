@@ -62,6 +62,9 @@ public class GameManager : MonoBehaviour
 
     public void Reset()
     {
-        mypushbox.GetComponent<PushBox>().ResetPosition();
+        if (mypushbox != null)
+        {
+            mypushbox.GetComponent<PushBox>().ResetPosition();
+        }
     }
 }
