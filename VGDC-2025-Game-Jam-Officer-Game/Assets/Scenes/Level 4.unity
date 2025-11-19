@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1014152900229534088, guid: 5b58d52f81dc2cb4581c953a476323de, type: 3}
       propertyPath: m_Text
-      value: 'Progress: Level 4/?'
+      value: 'Progress: Level 4/10'
       objectReference: {fileID: 0}
     - target: {fileID: 4854903435093652004, guid: 5b58d52f81dc2cb4581c953a476323de, type: 3}
       propertyPath: m_Name
