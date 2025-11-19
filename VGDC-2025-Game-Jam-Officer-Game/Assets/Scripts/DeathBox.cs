@@ -6,6 +6,7 @@ public class Patrol : MonoBehaviour
     //public Transform pointA;
     //public Transform pointB;
     private SimpleCharacterController2D player;
+    private GameManager gm;
 
     [Header("Movement Settings")]
     public float speed = 2f;
@@ -17,6 +18,7 @@ public class Patrol : MonoBehaviour
         // Start by moving toward point A
         //targetPoint = pointA;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<SimpleCharacterController2D>();
+        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     void Update()
@@ -39,6 +41,7 @@ public class Patrol : MonoBehaviour
             // Destroy the object that hit this object
             //Destroy(collision.gameObject);
             player.Reset();
+            gm.Reset();
 
             // Or destroy this object instead
             // Destroy(gameObject);
