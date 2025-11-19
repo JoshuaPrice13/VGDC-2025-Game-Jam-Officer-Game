@@ -563,7 +563,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Congratulations!
 
-    You have completed all 10 levels!'
+    You have completed all 8 levels!'
 --- !u!222 &880719580
 CanvasRenderer:
   m_ObjectHideFlags: 0
