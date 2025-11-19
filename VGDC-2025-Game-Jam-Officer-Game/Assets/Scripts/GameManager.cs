@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     private bool isLight = false;
     private GameObject[] lightPlatforms;
     private GameObject[] darkPlatforms;
+    public GameObject mypushbox;
 
     void Start()
     {
@@ -59,5 +60,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-   
+    public void Reset()
+    {
+        mypushbox.GetComponent<PushBox>().ResetPosition();
+    }
 }
