@@ -24,11 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 5.unity
     guid: 6e909d69a38804642872701c91afcf68
   - enabled: 1
-    path: Assets/Scenes/Level 6.unity
-    guid: 0771d9735f0b6c942bb27c078cd0968b
+    path: Assets/Scenes/josh1.unity
+    guid: 057a0ab6b20f1cc4eae1c90e9ea89e11
   - enabled: 1
     path: Assets/Scenes/Level 7.unity
-    guid: 65541f9e3032cd841b16467da6a855d8
+    guid: ac4bbd9f987af62449b2e6bb8fe42953
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 0771d9735f0b6c942bb27c078cd0968b
   - enabled: 1
     path: Assets/Scenes/Ending_Menu.unity
     guid: c7ff408f4dc51ae439069ad9f9ae9005
